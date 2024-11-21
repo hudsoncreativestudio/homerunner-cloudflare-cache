@@ -21,18 +21,6 @@ jobs:
       - name: Show Plugin Version
         run: echo '$PLUGIN_VERSION'
 
-      - name: Validate composer.json and composer.lock
-        run: composer validate --strict
-
-      - name: Cache Composer packages
-        id: composer-cache
-        uses: actions/cache@v4
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
       - name: Setup node v20
         uses: actions/setup-node@v4
         with:
