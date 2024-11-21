@@ -25,6 +25,7 @@ module.exports = function (grunt) {
             "build/homerunner-cloudflare-cache.v" + pkgJson.version + ".zip",
         },
         files: [
+          { src: "includes/**", dest: "homerunner-cloudflare-cache/" },
           {
             src: "homerunner-cloudflare-cache.php",
             dest: "homerunner-cloudflare-cache/",

@@ -1,0 +1,18 @@
+{
+	"name": "hudsoncreativestudio/homerunner-cloudflare-cache",
+	"description": "Clears Cloudflare cache whenever a page, post, or custom post type is updated in WordPress. Stores API credentials for Cloudflare.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Shazzad Hossain Khan",
+			"email": "hello@shazzad.me"
+		}
+	],
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"HomerunnerCfCache\\": "includes/"
+		}
+	}
+}
