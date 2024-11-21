@@ -1,0 +1,7 @@
+*.log
+/license.txt
+/readme.html
+/node_modules
+/vendor/
+/build/
+*.zip
