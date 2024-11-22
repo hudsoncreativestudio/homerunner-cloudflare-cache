@@ -4,15 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c882729210a89a709cba00c35a068f09",
-    "packages": [],
+    "content-hash": "54b031682706ffaf5c587b38e16b4aa3",
+    "packages": [
+        {
+            "name": "shazzad/wp-form-ui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shazzad/wp-form-ui.git",
+                "reference": "39a8a0e34997c0659e60c4e29e73e6db28bf99f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shazzad/wp-form-ui/zipball/39a8a0e34997c0659e60c4e29e73e6db28bf99f4",
+                "reference": "39a8a0e34997c0659e60c4e29e73e6db28bf99f4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Shazzad\\WpFormUi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shazzad Hossain Khan",
+                    "email": "hello@shazzad.me",
+                    "homepage": "https://shazzad.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Form library for WordPress plugin & theme development.",
+            "homepage": "https://github.com/shazzad/wp-form-ui",
+            "keywords": [
+                "form",
+                "wordpress",
+                "wordpress-form"
+            ],
+            "support": {
+                "issues": "https://github.com/shazzad/wp-form-ui/issues",
+                "source": "https://github.com/shazzad/wp-form-ui/tree/master"
+            },
+            "time": "2023-11-27T17:18:24+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "shazzad/wp-form-ui": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }

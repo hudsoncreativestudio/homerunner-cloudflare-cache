@@ -12,6 +12,11 @@ class Cleaner {
 			return;
 		}
 
+		$allowed_post_types = get_option( 'homecfcc_post_types' );
+		if ( ! is_array( $allowed_post_types ) || ! in_array( $post->post_type, $allowed_post_types ) ) {
+			return;
+		}
+
 		// check if post type public.
 		$post_type = get_post_type_object( $post->post_type );
 		if ( ! $post_type->public ) {
@@ -32,9 +37,8 @@ class Cleaner {
 	}
 
 	protected static function clear_cloudflare_cache( $url ) {
-		$options   = get_option( 'homerunner_cloudflare_cache_settings' );
-		$api_token = isset( $options['api_token'] ) ? $options['api_token'] : '';
-		$zone_id   = isset( $options['zone_id'] ) ? $options['zone_id'] : '';
+		$api_token = get_option( 'homecfcc_api_token' );
+		$zone_id   = get_option( 'homecfcc_zone_id' );
 
 		if ( empty( $api_token ) || empty( $zone_id ) ) {
 			return;

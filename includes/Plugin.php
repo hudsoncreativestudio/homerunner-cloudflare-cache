@@ -1,6 +1,8 @@
 <?php
 namespace HomerunnerCfCache;
 
+use Shazzad\WpFormUi;
+
 class Plugin {
 
 	/**
@@ -50,7 +52,11 @@ class Plugin {
 	 * Initialize the plugin.
 	 */
 	private function initialize() {
+		WpFormUi\Provider::setup();
+
 		Cleaner::setup();
+		RestApi::setup();
+		Scripts::setup();
 
 		if ( is_admin() ) {
 			Admin\Main::setup();
@@ -63,7 +69,7 @@ class Plugin {
 	public function maybe_upgrade_db() {
 		if ( ! get_option( 'homecfcc_version' )
 			|| version_compare( HOMECFCC_VERSION, get_option( 'homecfcc_version' ), '>' ) ) {
-			// Activator::run();
+			Installer::upgrade();
 		}
 	}
 }

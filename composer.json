@@ -14,5 +14,8 @@
 		"psr-4": {
 			"HomerunnerCfCache\\": "includes/"
 		}
+	},
+	"require": {
+		"shazzad/wp-form-ui": "dev-master"
 	}
 }
