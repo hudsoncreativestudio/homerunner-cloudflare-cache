@@ -25,7 +25,17 @@ module.exports = function (grunt) {
             "build/homerunner-cloudflare-cache.v" + pkgJson.version + ".zip",
         },
         files: [
+          {
+            expand: true,
+            cwd: ".",
+            src: [
+              "assets/**",
+              "!assets/sass/**", // This line excludes the sass folder
+            ],
+            dest: "homerunner-cloudflare-cache/",
+          },
           { src: "includes/**", dest: "homerunner-cloudflare-cache/" },
+          { src: "vendor/**", dest: "homerunner-local/" },
           {
             src: "homerunner-cloudflare-cache.php",
             dest: "homerunner-cloudflare-cache/",
