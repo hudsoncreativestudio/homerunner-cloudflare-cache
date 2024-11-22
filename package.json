@@ -1,8 +1,10 @@
 {
 	"name": "homerunner-cloudflare-cache",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": true,
 	"scripts": {
+		"watch": "sass assets/sass/:./assets/css/ --style expanded --watch",
+		"css": "sass assets/sass/:./assets/css/ --no-source-map --style expanded || exit 0",
 		"build": "grunt build"
 	},
 	"main": "Gruntfile.js",
@@ -10,6 +12,7 @@
 		"grunt": "^1.6.1",
 		"grunt-contrib-compress": "^2.0.0",
 		"grunt-string-replace": "^1.2.1",
-		"matchdep": "^2.0.0"
+		"matchdep": "^2.0.0",
+		"sass": "^1.79.4"
 	}
 }
