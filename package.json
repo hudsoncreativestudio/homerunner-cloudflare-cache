@@ -1,6 +1,6 @@
 {
 	"name": "homerunner-cloudflare-cache",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"private": true,
 	"scripts": {
 		"watch": "sass assets/sass/:./assets/css/ --style expanded --watch",

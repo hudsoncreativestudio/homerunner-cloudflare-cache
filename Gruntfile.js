@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             dest: "homerunner-cloudflare-cache/",
           },
           { src: "includes/**", dest: "homerunner-cloudflare-cache/" },
-          { src: "vendor/**", dest: "homerunner-local/" },
+          { src: "vendor/**", dest: "homerunner-cloudflare-cache/" },
           {
             src: "homerunner-cloudflare-cache.php",
             dest: "homerunner-cloudflare-cache/",

@@ -3,7 +3,7 @@
  * Plugin Name: Homerunner Cloudflare Cache
  * Plugin URI: https://github.com/hudsoncreativestudio/homerunner-cloudflare-cache
  * Description: Clears Cloudflare cache whenever a page, post, or custom post type is updated in WordPress. Stores API credentials for Cloudflare.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Hudson Creative Studio
  * Author URI: https://hudsoncreativestudio.com
  * Requires at least: 5.8.2
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'HOMECFCC_VERSION' ) ) {
-	define( 'HOMECFCC_VERSION', '1.0.3' );
+	define( 'HOMECFCC_VERSION', '1.0.4' );
 }
 
 if ( ! defined( 'HOMECFCC_PLUGIN_FILE' ) ) {
